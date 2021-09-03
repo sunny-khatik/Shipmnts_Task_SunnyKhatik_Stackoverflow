@@ -1,0 +1,49 @@
+.auth{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #FEEDDF ;
+       border: 1px solid black;
+}
+.auth__div1{
+    margin: 170px;
+    background-color:#e0a97b ;
+    border-radius: 20px;
+    padding: 7px;
+    border: 2px solid rgb(172, 146, 100);
+}
+.auth__div2{
+    width: 500px;
+    border-radius: 20px;
+    height: 300px;
+    border: 3px solid black;
+    margin-top: 100px;
+}
+.btn{
+    background-color: #FEE3CD;
+	color: inherit;
+	border: 1px solid black;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    width: 170px;
+    height: 30px;
+
+}
+.element {
+    background-color: #FEE3CD;
+  text-indent: -9999px;
+  line-height: 0; /* Collapse the original line */
+  width: 150px;
+   border-radius: 5px;
+}
+
+.element::after {
+    height: 30px;
+  content: "Login ...?";
+  text-indent: 0;
+  display:block;
+  line-height: initial;  
+  background: none;
+ 
+}
