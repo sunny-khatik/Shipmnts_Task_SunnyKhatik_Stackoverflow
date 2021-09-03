@@ -39,11 +39,15 @@ route.get("/all", async (req, res) => {
     const returnQuestions = [];
     for (let i = 0; i < questions.length; i++) {
       const title = questions[i].title;
+      const body = questions[i].body;
       const user = await Models.Users.findById(questions[i].user_id);
       const username = user.username;
+      const uid = user._id;
       returnQuestions.push({
         title,
         username,
+        body,
+        uid,
         question_id: questions[i]._id,
       });
     }

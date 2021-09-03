@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { useHistory } from "react-router-dom"
 import TextField from "@material-ui/core/TextField";
 import axios from 'axios';
+import { Link } from "react-router-dom";
 const AddQuestion = () => {
     let history = useHistory();
     const [tag, settag] = useState();
@@ -44,6 +45,10 @@ const AddQuestion = () => {
             <span>Body :</span> <TextField type="text" name="title" onChange={(e) => { setbody(e.target.value) }} required /><hr />
             <span>Tags : </span> <TextField type="text" name="title" onChange={(e) => { splitags(e.target.value) }} required /><hr />
             <button onClick={handleclick}>Add Question</button>
+            <hr />
+            <Link to="/homepage">
+                <button>HomePage</button>
+            </Link>
         </div>
     );
 };
