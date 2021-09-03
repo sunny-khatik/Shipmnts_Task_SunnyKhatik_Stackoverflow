@@ -1,0 +1,25 @@
+.main__div{
+    width: 80%;
+    /* height: 500px; */
+    margin-left: 10%;
+    border: 1px solid black;
+}
+.head__div{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    border: 1px solid black;
+    padding: 25px;
+}
+.head__div > span{
+    margin-left: 600px;
+    margin-right: 5px;
+}
+.head__div > p{
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+.queList__div > p{
+    margin-left: 0px;
+}
